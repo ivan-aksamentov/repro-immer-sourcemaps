@@ -1,0 +1,32 @@
+{
+  "name": "repro-immer-sourcemaps",
+  "version": "0.0.1",
+  "description": "Reproduces webpack warning related to source maps when using immer 5.1.0",
+  "repository": "https://github.com/ivan-aksamentov/repro-immer-sourcemaps",
+  "author": "Ivan Aksamentov <ivan.aksamentov@gmail.com>",
+  "main": "dist/bundle.js",
+  "ts:module": "src/index.ts",
+  "license": "MIT",
+  "scripts": {
+    "dev": "NODE_ENV=development BABEL_ENV=development webpack",
+    "dev:clean": "rimraf 'dist'"
+  },
+  "dependencies": {
+    "immer": "5.1.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "7.7.7",
+    "@babel/core": "7.7.7",
+    "@babel/node": "7.7.7",
+    "@babel/preset-env": "7.7.7",
+    "@babel/register": "7.7.7",
+    "@types/node": "12.12.21",
+    "@types/webpack": "4.41.0",
+    "babel-loader": "8.0.6",
+    "prettier": "1.19.1",
+    "rimraf": "3.0.0",
+    "source-map-loader": "0.2.4",
+    "webpack": "4.41.4",
+    "webpack-cli": "3.3.10"
+  }
+}
