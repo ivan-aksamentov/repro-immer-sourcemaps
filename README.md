@@ -2,6 +2,8 @@
 
 Reproduces webpack warning related to source maps when using immer 5.1.0.
 
+Reported as [immer#487](https://github.com/immerjs/immer/issues/487)
+
 ## Steps:
 
 ```bash
@@ -47,4 +49,3 @@ In this case, source map assumes that `tslib.es6.js` is available in
 case, for example if using `yarn` as a package manager, which may hoist
 dependencies. In general, source maps should not make such assumptions.
 
-Reported as <TODO>
